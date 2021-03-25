@@ -1,0 +1,27 @@
+package com.tcs.entity;
+
+import lombok.Data;
+
+import javax.persistence.*;
+
+@Entity
+@Data
+@Table (name = "SKILL_ENTITY")
+public class SkillEntity {
+	@Id
+	private Long id;
+	private String skill;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getSkill() {
+		return skill;
+	}
+	public void setSkill(String skill) {
+		this.skill = skill;
+	}
+
+}
